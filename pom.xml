@@ -12,8 +12,9 @@
         <module>blog-dao</module>
         <module>blog-service</module>
         <module>blog-domain</module>
+        <module>blog-commons</module>
     </modules>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>blog</name>
     <description>Demo project for Spring Boot</description>
