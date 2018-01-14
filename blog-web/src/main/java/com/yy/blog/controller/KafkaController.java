@@ -22,7 +22,7 @@ public class KafkaController {
 
     public static Logger logger = LoggerFactory.getLogger(KafkaController.class);
 
-    @RequestMapping(value = "static/test", method = {RequestMethod.POST, RequestMethod.GET })
+    @RequestMapping(value = "test", method = {RequestMethod.POST, RequestMethod.GET })
     public @ResponseBody Object test() {
         template.send("zjmTest", "zjmtest0", "郑佳铭0");
         template.send("zjmTest", "zjmtest1", "郑佳铭1");
@@ -32,7 +32,7 @@ public class KafkaController {
 
     @KafkaListener(id = "t1", topics = {"zjmTest"})
 //    @KafkaListener(id = "t1", topicPartitions={@TopicPartition(partitions={"0","2"}, topic="zjmTest")})
-    public void listenT1(ConsumerRecord<?, ?> cr) throws Exception {
+    public void listen1(ConsumerRecord<?, ?> cr) throws Exception {
         logger.info("{} - {} : {}", cr.topic(), cr.key(), cr.value());
     }
 }

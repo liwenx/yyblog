@@ -34,9 +34,9 @@ spring:
       buffer-memory: 33554432
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      bootstrap-servers: 112.74.40.100:9092
+      bootstrap-servers: 112.74.40.100:9092,112.74.40.100:8090
     consumer:
-      bootstrap-servers: 112.74.40.100:9092
+      bootstrap-servers: 112.74.40.100:9092,112.74.40.100:8090
       group-id: zjm-test
       auto-offset-reset: earliest
       enable-auto-commit: true
