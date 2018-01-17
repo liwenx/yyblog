@@ -11,9 +11,11 @@ spring:
     #redis数据库索引(默认为0)
     database: 0
     #redis服务器地址
-    host: 45.77.113.201
+#    host: 45.77.113.201
+    host: 112.74.40.100
     #端口
-    port: 6379
+#    port: 6379
+    port: 8087
     #redis服务器连接密码(默认为空)
     password:
     timeout: 0
