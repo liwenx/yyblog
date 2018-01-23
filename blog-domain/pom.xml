@@ -11,5 +11,14 @@
 
     <artifactId>blog-domain</artifactId>
 
+    <!-- 模块间依赖关系 -->
+    <dependencies>
+        <dependency>
+            <groupId>com.yy</groupId>
+            <artifactId>blog-commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
