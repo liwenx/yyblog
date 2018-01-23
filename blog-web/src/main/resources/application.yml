@@ -3,7 +3,7 @@ server:
   context-path: /blog
 spring:
   datasource:
-    url: jdbc:mysql://45.77.113.201:3306/blog?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://vps.liwx.xyz:3306/blog?useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password:
@@ -50,4 +50,4 @@ mybatis:
 fdfs:
   soTimeout: 1500
   connectTimeout: 600
-  trackerList: 45.77.113.201:22122
+  trackerList: vps.liwx.xyz:22122
